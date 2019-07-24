@@ -1,0 +1,13 @@
+---
+# vars file for ulimit
+_ulimit_config_directory:
+  default: /etc
+
+ulimit_config_directory: "{{ _ulimit_config_directory[ansible_distribution] | default(_ulimit_config_directory['default']) }}"
+
+ulimit_config_file: ulimit.conf
+
+_ulimit_service:
+  default: ulimit
+
+ulimit_service: "{{ _ulimit_service[ansible_distribution] | default(_ulimit_service['default']) }}"
