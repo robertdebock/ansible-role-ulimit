@@ -1,8 +1,0 @@
----
-# handlers file for ulimit
-- name: restart ulimit
-  service:
-    name: "{{ ulimit_service }}"
-    state: restarted
-  when:
-    - ansible_virtualization_type != "docker"
