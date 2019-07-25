@@ -1,4 +1,4 @@
 ---
 repository:
-  description: Install and configure ulimit on your system.
+  description: Configure ulimit on your system.
   homepage: https://robertdebock.nl/
