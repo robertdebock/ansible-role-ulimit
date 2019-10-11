@@ -4,12 +4,12 @@ language: python
 services: docker
 
 env:
-  - version=">=2.7,<2.8" distro="alpine-latest"
-  - version="" distro="alpine-latest"
-  - version="devel" distro="alpine-latest"
-  - version=">=2.7,<2.8" distro="alpine-edge"
-  - version="" distro="alpine-edge"
-  - version="devel" distro="alpine-edge"
+  - version=">=2.7,<2.8" distro="alpine-latest" expectation="fail"
+  - version="" distro="alpine-latest" expectation="fail"
+  - version="devel" distro="alpine-latest" expectation="fail"
+  - version=">=2.7,<2.8" distro="alpine-edge" expectation="fail"
+  - version="" distro="alpine-edge" expectation="fail"
+  - version="devel" distro="alpine-edge" expectation="fail"
   - version=">=2.7,<2.8" distro="archlinux"
   - version="" distro="archlinux"
   - version="devel" distro="archlinux"
@@ -46,10 +46,10 @@ env:
 
 matrix:
   allow_failures:
-    - env: version=">=2.7,<2.8" distro="alpine-edge"
-    - env: version="" distro="alpine-edge"
-    - env: version="devel" distro="alpine-edge"
-    - env: version="devel" distro="alpine-latest"
+    - env: version=">=2.7,<2.8" distro="alpine-edge" expectation="fail"
+    - env: version="" distro="alpine-edge" expectation="fail"
+    - env: version="devel" distro="alpine-edge" expectation="fail"
+    - env: version="devel" distro="alpine-latest" expectation="fail"
     - env: version="devel" distro="archlinux"
     - env: version="devel" distro="centos-7"
     - env: version="devel" distro="centos-latest"
