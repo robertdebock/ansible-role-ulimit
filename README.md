@@ -109,8 +109,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|allow_failures|
 |---------|--------------|
-|docker-alpine-openrc|yes|
-|docker-alpine-openrc|yes|
 |docker-centos-systemd|no|
 |docker-centos-systemd|no|
 |docker-debian-systemd|yes|
