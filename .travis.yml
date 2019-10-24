@@ -9,8 +9,6 @@ services:
 
 env:
   matrix:
-    - image="docker-alpine-openrc"
-    - image="docker-alpine-openrc" tag="edge"
     # - namespace="archlinux/" image="base"
     - image="docker-debian-systemd" tag="stable"
     - image="docker-debian-systemd" tag="unstable"
@@ -28,7 +26,6 @@ env:
 
 matrix:
   allow_failures:
-    - env: image="docker-alpine-openrc" tag="edge"
     - env: image="docker-debian-systemd" tag="unstable"
     - env: image="docker-fedora-systemd" tag="rawhide"
     - env: image="docker-ubuntu-systemd" tag="rolling"
