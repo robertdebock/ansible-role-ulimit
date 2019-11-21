@@ -36,7 +36,6 @@ galaxy_info:
     - ulimit
     - archlinux
     - centos
-    - el
     - fedora
     - opensuse
     - rhel
