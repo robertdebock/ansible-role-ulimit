@@ -34,7 +34,6 @@ galaxy_info:
 
   galaxy_tags:
     - ulimit
-    - alpine
     - archlinux
     - centos
     - debian
