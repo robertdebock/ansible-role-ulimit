@@ -1,4 +1,7 @@
 ---
+#
+# Ansible managed
+#
 repository:
   description: Configure ulimit on your system.
   homepage: https://robertdebock.nl/
