@@ -9,7 +9,6 @@
     comment: "{{ item.comment | default(omit) }}"
     dest: "{{ ulimit_dest }}"
     backup: "{{ ulimit_backup }}"
-  with_items:
-    - "{{ ulimit_items }}"
+  loop: "{{ ulimit_items }}"
   loop_control:
     label: "{{ item.limit_item }}"
