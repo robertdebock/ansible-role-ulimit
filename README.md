@@ -1,14 +1,12 @@
-ulimit
-=========
+# ulimit
 
 Configure ulimit on your system.
 
 |Travis|GitHub|Quality|Downloads|
 |------|------|-------|---------|
-|[![travis](https://travis-ci.org/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|![quality](https://img.shields.io/ansible/quality/42271)|![downloads](https://img.shields.io/ansible/role/d/42271)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|
 
-Example Playbook
-----------------
+## Example Playbook
 
 This example is taken from `molecule/resources/converge.yml` and is tested on each push, pull request and release.
 ```yaml
@@ -62,8 +60,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-Role Variables
---------------
+## Role Variables
 
 These variables are set in `defaults/main.yml`:
 ```yaml
@@ -83,8 +80,7 @@ ulimit_dest: /etc/security/limits.conf
 ulimit_backup: yes
 ```
 
-Requirements
-------------
+## Requirements
 
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
@@ -97,17 +93,14 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```
 
-Context
--------
+## Context
 
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
 ![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/ulimit.png "Dependency")
 
-
-Compatibility
--------------
+## Compatibility
 
 This role has been tested on these [container images](https://hub.docker.com/):
 
@@ -126,8 +119,7 @@ The minimum version of Ansible required is 2.8 but tests have been done to:
 - The current version.
 - The development version.
 
-Exceptions
-----------
+## Exceptions
 
 Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
 
@@ -136,10 +128,9 @@ Some variarations of the build matrix do not work. These are the variations and 
 | Alpine | directory /etc/security is not writable |
 
 
-Testing
--------
+## Testing
 
-[Unit tests](https://travis-ci.org/robertdebock/ansible-role-ulimit) are done on every commit, pull request, release and periodically.
+[Unit tests](https://travis-ci.com/robertdebock/ansible-role-ulimit) are done on every commit, pull request, release and periodically.
 
 If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-ulimit/issues)
 
@@ -171,13 +162,11 @@ image="centos" tox
 image="debian" tag="stable" tox
 ```
 
-License
--------
+## License
 
 Apache-2.0
 
 
-Author Information
-------------------
+## Author Information
 
 [Robert de Bock](https://robertdebock.nl/)
