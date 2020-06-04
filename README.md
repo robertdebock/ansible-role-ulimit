@@ -2,9 +2,9 @@
 
 Configure ulimit on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ulimit.svg)](https://github.com/robertdebock/ansible-role-ulimit/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
