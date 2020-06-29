@@ -1,5 +1,8 @@
 ---
 # tasks file for ulimit
+- name: include assert.yml
+  include_tasks: assert.yml
+
 - name: set ulimit value
   pam_limits:
     domain: "{{ item.domain | default(ulimit_domain) }}"

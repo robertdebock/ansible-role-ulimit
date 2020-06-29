@@ -1,0 +1,4 @@
+---
+# vars file for ulimit
+
+ulimit_acceptable_limit_items: ["core", "data", "fsize", "memlock", "nofile", "rss", "stack", "cpu", "nproc", "as", "maxlogins", "maxsyslogins", "priority", "locks", "sigpending", "msgqueue", "nice", "rtprio", "chroot"]
