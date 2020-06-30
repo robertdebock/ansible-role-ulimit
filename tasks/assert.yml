@@ -12,7 +12,7 @@
     that:
       - item.limit_item is defined
       - item.limit_item | length > 0
-      - item.limit_items in ulimit_acceptable_limit_items
+      - item.limit_item in ulimit_acceptable_limit_items
       - item.value is defined
       - item.value | int
   loop: "{{ ulimit_items }}"
