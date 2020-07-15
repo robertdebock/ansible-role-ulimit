@@ -17,6 +17,8 @@
       - item.value | int
     quiet: yes
   loop: "{{ ulimit_items }}"
+  loop_control:
+    label: "{{ item.limit_item }}"
   when:
     - ulimit_items is defined
 
