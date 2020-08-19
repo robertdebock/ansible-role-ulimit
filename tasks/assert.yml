@@ -4,6 +4,7 @@
     that:
       - ulimit_items | length > 0
       - ulimit_items is iterable
+    quiet: yes
   when:
     - ulimit_items is defined
 
@@ -27,6 +28,7 @@
     that:
       - ulimit_domain is defined
       - ulimit_domain | length > 0
+    quiet: yes
 
 - name: test if ulimit_limit_type is set correctly
   assert:
@@ -34,15 +36,18 @@
       - ulimit_limit_type is defined
       - ulimit_limit_type | length > 0
       - ulimit_limit_type in ["hard", "soft", "-"]
+    quiet: yes
 
 - name: test if ulimit_dest is set correctly
   assert:
     that:
       - ulimit_dest is defined
       - ulimit_dest | length > 0
+    quiet: yes
 
 - name: test if ulimit_backup is set correctly
   assert:
     that:
       - ulimit_backup is defined
       - ulimit_backup | type_debug == "bool"
+    quiet: yes
