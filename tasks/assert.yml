@@ -35,7 +35,7 @@
     that:
       - ulimit_limit_type is defined
       - ulimit_limit_type | length > 0
-      - ulimit_limit_type in ["hard", "soft", "-"]
+      - ulimit_limit_type in [ "hard", "soft", "-" ]
     quiet: yes
 
 - name: test if ulimit_dest is set correctly
