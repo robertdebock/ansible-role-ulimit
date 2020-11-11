@@ -15,7 +15,7 @@
       - item.limit_item | length > 0
       - item.limit_item in ulimit_acceptable_limit_items
       - item.value is defined
-      - item.value | int
+      - item.value is number
     quiet: yes
   loop: "{{ ulimit_items }}"
   loop_control:
