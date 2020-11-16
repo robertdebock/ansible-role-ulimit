@@ -49,5 +49,5 @@
   assert:
     that:
       - ulimit_backup is defined
-      - ulimit_backup | type_debug == "bool"
+      - ulimit_backup is boolean
     quiet: yes
