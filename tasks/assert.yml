@@ -12,6 +12,7 @@
   assert:
     that:
       - item.limit_item is defined
+      - item.limit_item is string
       - item.limit_item in ulimit_acceptable_limit_items
       - item.value is defined
       - item.value is number
@@ -26,12 +27,14 @@
   assert:
     that:
       - ulimit_domain is defined
+      - ulimit_domain is string
     quiet: yes
 
 - name: test if ulimit_limit_type is set correctly
   assert:
     that:
       - ulimit_limit_type is defined
+      - ulimit_limit_type is string
       - ulimit_limit_type in [ "hard", "soft", "-" ]
     quiet: yes
 
@@ -39,6 +42,7 @@
   assert:
     that:
       - ulimit_dest is defined
+      - ulimit_dest is string
     quiet: yes
 
 - name: test if ulimit_backup is set correctly
