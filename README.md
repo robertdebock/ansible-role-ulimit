@@ -2,9 +2,9 @@
 
 Configure ulimit on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ulimit.svg)](https://github.com/robertdebock/ansible-role-ulimit/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-ulimit.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-ulimit)|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-ulimit/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-ulimit)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ulimit.svg)](https://github.com/robertdebock/ansible-role-ulimit/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -69,10 +69,11 @@ ulimit_backup: yes
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-ulimit/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
