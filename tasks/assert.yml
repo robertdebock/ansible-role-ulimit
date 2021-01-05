@@ -22,6 +22,27 @@
     label: "{{ item.limit_item }}"
   when:
     - ulimit_items is defined
+  vars:
+    ulimit_acceptable_limit_items:
+      - core
+      - data
+      - fsize
+      - memlock
+      - nofile
+      - rss
+      - stack
+      - cpu
+      - nproc
+      - as
+      - maxlogins
+      - maxsyslogins
+      - priority
+      - locks
+      - sigpending
+      - msgqueue
+      - nice
+      - rtprio
+      - chroot
 
 - name: test if ulimit_domain is set correctly
   assert:
