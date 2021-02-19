@@ -7,7 +7,7 @@
   delegate_to: localhost
 
 - name: set ulimit value
-  pam_limits:
+  community.general.pam_limits:
     domain: "{{ item.domain | default(ulimit_domain) }}"
     limit_type: "{{ item.limit_type | default(ulimit_limit_type) }}"
     limit_item: "{{ item.limit_item }}"
