@@ -49,6 +49,7 @@
     that:
       - ulimit_domain is defined
       - ulimit_domain is string
+      - ulimit_domain is not none
     quiet: yes
 
 - name: assert | Test if ulimit_limit_type is set correctly
@@ -64,6 +65,7 @@
     that:
       - ulimit_dest is defined
       - ulimit_dest is string
+      - ulimit_dest is not none
     quiet: yes
 
 - name: assert | Test if ulimit_backup is set correctly
