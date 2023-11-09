@@ -2,9 +2,9 @@
 
 Configure ulimit on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-ulimit/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-ulimit)|[![quality](https://img.shields.io/ansible/quality/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/42271)](https://galaxy.ansible.com/robertdebock/ulimit)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ulimit.svg)](https://github.com/robertdebock/ansible-role-ulimit/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-ulimit/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-ulimit)|[![downloads](https://img.shields.io/ansible/role/d/24613)](https://galaxy.ansible.com/robertdebock/ulimit)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-ulimit.svg)](https://github.com/robertdebock/ansible-role-ulimit/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -108,7 +108,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-ulimit/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-ulimit/issues).
 
 ## [License](#license)
 
