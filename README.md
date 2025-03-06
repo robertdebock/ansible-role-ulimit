@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: false
 
   roles:
-    - role: ansible-role-ulimit
+    - role: robertdebock.ulimit
       ulimit_items:
         - limit_item: nofile
           domain: root

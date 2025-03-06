@@ -5,7 +5,7 @@
   gather_facts: false
 
   roles:
-    - role: ansible-role-ulimit
+    - role: robertdebock.ulimit
       ulimit_items:
         - limit_item: nofile
           domain: root
