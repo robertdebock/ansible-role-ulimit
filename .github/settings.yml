@@ -5,4 +5,4 @@
 repository:
   description: Configure ulimit on your system.
   homepage: https://robertdebock.nl/
-  topics: ulimit, system, ansible, molecule, tox, playbook
+  topics: ulimit, system, ansible, molecule, playbook
